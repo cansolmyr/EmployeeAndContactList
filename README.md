@@ -9,7 +9,6 @@ Tallinn - Tartu Employee List
 
 **2. What architecture pattern did you use (including reference) and why**
   I prefer VIPER because the roles of classes are more clear in VIPER design. Developers have to divide Entity and Presenter. Segregating responsibilities makes it more clear than MVVM and MVP. 
-  
   View Controller classes are clean. Responsibility Segregation for layers. Reusability
   
   
