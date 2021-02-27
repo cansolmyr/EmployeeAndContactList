@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3643294425E686D100D064C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643294325E686D100D064C0 /* AppDelegate.swift */; };
+		3643294825E686D100D064C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643294725E686D100D064C0 /* ViewController.swift */; };
+		3643294B25E686D100D064C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3643294925E686D100D064C0 /* Main.storyboard */; };
+		3643294D25E686D300D064C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3643294C25E686D300D064C0 /* Assets.xcassets */; };
+		3643295025E686D300D064C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3643294E25E686D300D064C0 /* LaunchScreen.storyboard */; };
+		3643296225E6896700D064C0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643296125E6896700D064C0 /* Router.swift */; };
+		3643296625E68B4300D064C0 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643296525E68B4300D064C0 /* ServiceLayer.swift */; };
+		3643297E25E9844900D064C0 /* BaseAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643297B25E9844900D064C0 /* BaseAppRouter.swift */; };
+		3643297F25E9844900D064C0 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643297C25E9844900D064C0 /* AppRoute.swift */; };
+		3643298025E9844900D064C0 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643297D25E9844900D064C0 /* Module.swift */; };
+		3643298325E984FA00D064C0 /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643298225E984FA00D064C0 /* Modules.swift */; };
+		3643298725E9854100D064C0 /* GlobalAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643298625E9854100D064C0 /* GlobalAlertView.swift */; };
+		3643299125E9860400D064C0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643299025E9860400D064C0 /* UIApplication+Extensions.swift */; };
+		3643299425E9864500D064C0 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643299325E9864500D064C0 /* Bundle+Extensions.swift */; };
+		364329A025E9868900D064C0 /* EmployeeListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643299825E9868900D064C0 /* EmployeeListModule.swift */; };
+		364329A125E9868900D064C0 /* EmployeeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643299925E9868900D064C0 /* EmployeeListPresenter.swift */; };
+		364329A225E9868900D064C0 /* EmployeeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643299A25E9868900D064C0 /* EmployeeListRouter.swift */; };
+		364329A325E9868900D064C0 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643299B25E9868900D064C0 /* EmployeeListViewController.swift */; };
+		364329A425E9868900D064C0 /* EmployeeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643299C25E9868900D064C0 /* EmployeeListInteractor.swift */; };
+		364329A525E9868900D064C0 /* EmployeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643299D25E9868900D064C0 /* EmployeeListModel.swift */; };
+		364329A625E9868900D064C0 /* EmployeeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3643299E25E9868900D064C0 /* EmployeeListViewController.xib */; };
+		364329B225E9A8AE00D064C0 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364329B125E9A8AE00D064C0 /* EmployeeTableViewCell.swift */; };
+		364329B625E9AB7E00D064C0 /* EmployeeListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364329B525E9AB7E00D064C0 /* EmployeeListTableViewDataSource.swift */; };
+		364329BB25E9C09A00D064C0 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364329BA25E9C09A00D064C0 /* ArrayExtensions.swift */; };
+		364329C725EA673300D064C0 /* EmployeeDetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364329BF25EA673300D064C0 /* EmployeeDetailModule.swift */; };
+		364329C825EA673300D064C0 /* EmployeeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364329C025EA673300D064C0 /* EmployeeDetailPresenter.swift */; };
+		364329C925EA673300D064C0 /* EmployeeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364329C125EA673300D064C0 /* EmployeeDetailRouter.swift */; };
+		364329CA25EA673300D064C0 /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364329C225EA673300D064C0 /* EmployeeDetailViewController.swift */; };
+		364329CB25EA673300D064C0 /* EmployeeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364329C325EA673300D064C0 /* EmployeeDetailInteractor.swift */; };
+		364329CD25EA673300D064C0 /* EmployeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364329C525EA673300D064C0 /* EmployeeDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3643294025E686D100D064C0 /* Mooncascade-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mooncascade-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3643294325E686D100D064C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3643294725E686D100D064C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3643294A25E686D100D064C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3643294C25E686D300D064C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3643294F25E686D300D064C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3643295125E686D300D064C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3643296125E6896700D064C0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3643296525E68B4300D064C0 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		3643297B25E9844900D064C0 /* BaseAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppRouter.swift; sourceTree = "<group>"; };
+		3643297C25E9844900D064C0 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		3643297D25E9844900D064C0 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		3643298225E984FA00D064C0 /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
+		3643298625E9854100D064C0 /* GlobalAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAlertView.swift; sourceTree = "<group>"; };
+		3643299025E9860400D064C0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		3643299325E9864500D064C0 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		3643299825E9868900D064C0 /* EmployeeListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListModule.swift; sourceTree = "<group>"; };
+		3643299925E9868900D064C0 /* EmployeeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListPresenter.swift; sourceTree = "<group>"; };
+		3643299A25E9868900D064C0 /* EmployeeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListRouter.swift; sourceTree = "<group>"; };
+		3643299B25E9868900D064C0 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
+		3643299C25E9868900D064C0 /* EmployeeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListInteractor.swift; sourceTree = "<group>"; };
+		3643299D25E9868900D064C0 /* EmployeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListModel.swift; sourceTree = "<group>"; };
+		3643299E25E9868900D064C0 /* EmployeeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListViewController.xib; sourceTree = "<group>"; };
+		364329B125E9A8AE00D064C0 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		364329B525E9AB7E00D064C0 /* EmployeeListTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListTableViewDataSource.swift; sourceTree = "<group>"; };
+		364329BA25E9C09A00D064C0 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		364329BF25EA673300D064C0 /* EmployeeDetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailModule.swift; sourceTree = "<group>"; };
+		364329C025EA673300D064C0 /* EmployeeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailPresenter.swift; sourceTree = "<group>"; };
+		364329C125EA673300D064C0 /* EmployeeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailRouter.swift; sourceTree = "<group>"; };
+		364329C225EA673300D064C0 /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
+		364329C325EA673300D064C0 /* EmployeeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailInteractor.swift; sourceTree = "<group>"; };
+		364329C525EA673300D064C0 /* EmployeeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3643293D25E686D100D064C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3643293725E686D100D064C0 = {
+			isa = PBXGroup;
+			children = (
+				3643294225E686D100D064C0 /* Mooncascade-Assignment */,
+				3643294125E686D100D064C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3643294125E686D100D064C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3643294025E686D100D064C0 /* Mooncascade-Assignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3643294225E686D100D064C0 /* Mooncascade-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				3643299625E9866C00D064C0 /* Scenes */,
+				3643298525E9852000D064C0 /* Extensions */,
+				3643297A25E983FC00D064C0 /* ViperTemplates */,
+				3643295925E686F500D064C0 /* NetworkLayer */,
+				3643294325E686D100D064C0 /* AppDelegate.swift */,
+				3643294725E686D100D064C0 /* ViewController.swift */,
+				3643294925E686D100D064C0 /* Main.storyboard */,
+				3643294C25E686D300D064C0 /* Assets.xcassets */,
+				3643294E25E686D300D064C0 /* LaunchScreen.storyboard */,
+				3643295125E686D300D064C0 /* Info.plist */,
+			);
+			path = "Mooncascade-Assignment";
+			sourceTree = "<group>";
+		};
+		3643295925E686F500D064C0 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3643296125E6896700D064C0 /* Router.swift */,
+				3643296525E68B4300D064C0 /* ServiceLayer.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		3643297A25E983FC00D064C0 /* ViperTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				3643297B25E9844900D064C0 /* BaseAppRouter.swift */,
+				3643297C25E9844900D064C0 /* AppRoute.swift */,
+				3643297D25E9844900D064C0 /* Module.swift */,
+				3643298225E984FA00D064C0 /* Modules.swift */,
+			);
+			path = ViperTemplates;
+			sourceTree = "<group>";
+		};
+		3643298525E9852000D064C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3643298A25E9859D00D064C0 /* AlertView */,
+				3643299025E9860400D064C0 /* UIApplication+Extensions.swift */,
+				3643299325E9864500D064C0 /* Bundle+Extensions.swift */,
+				364329BA25E9C09A00D064C0 /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3643298A25E9859D00D064C0 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				3643298625E9854100D064C0 /* GlobalAlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		3643299625E9866C00D064C0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				364329BE25EA671B00D064C0 /* EmployeeDetail */,
+				3643299725E9867500D064C0 /* EmployeeList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3643299725E9867500D064C0 /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				364329B425E9AB6A00D064C0 /* DataSource */,
+				364329AF25E9A87400D064C0 /* TableViewCells */,
+				3643299825E9868900D064C0 /* EmployeeListModule.swift */,
+				3643299925E9868900D064C0 /* EmployeeListPresenter.swift */,
+				3643299A25E9868900D064C0 /* EmployeeListRouter.swift */,
+				3643299B25E9868900D064C0 /* EmployeeListViewController.swift */,
+				3643299C25E9868900D064C0 /* EmployeeListInteractor.swift */,
+				3643299D25E9868900D064C0 /* EmployeeListModel.swift */,
+				3643299E25E9868900D064C0 /* EmployeeListViewController.xib */,
+			);
+			path = EmployeeList;
+			sourceTree = "<group>";
+		};
+		364329AF25E9A87400D064C0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				364329B125E9A8AE00D064C0 /* EmployeeTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		364329B425E9AB6A00D064C0 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				364329B525E9AB7E00D064C0 /* EmployeeListTableViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		364329BE25EA671B00D064C0 /* EmployeeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				364329BF25EA673300D064C0 /* EmployeeDetailModule.swift */,
+				364329C025EA673300D064C0 /* EmployeeDetailPresenter.swift */,
+				364329C125EA673300D064C0 /* EmployeeDetailRouter.swift */,
+				364329C225EA673300D064C0 /* EmployeeDetailViewController.swift */,
+				364329C325EA673300D064C0 /* EmployeeDetailInteractor.swift */,
+				364329C525EA673300D064C0 /* EmployeeDetailViewController.xib */,
+			);
+			path = EmployeeDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3643293F25E686D100D064C0 /* Mooncascade-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3643295425E686D300D064C0 /* Build configuration list for PBXNativeTarget "Mooncascade-Assignment" */;
+			buildPhases = (
+				3643293C25E686D100D064C0 /* Sources */,
+				3643293D25E686D100D064C0 /* Frameworks */,
+				3643293E25E686D100D064C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mooncascade-Assignment";
+			productName = "Mooncascade-Assignment";
+			productReference = 3643294025E686D100D064C0 /* Mooncascade-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3643293825E686D100D064C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					3643293F25E686D100D064C0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 3643293B25E686D100D064C0 /* Build configuration list for PBXProject "Mooncascade-Assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3643293725E686D100D064C0;
+			productRefGroup = 3643294125E686D100D064C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3643293F25E686D100D064C0 /* Mooncascade-Assignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3643293E25E686D100D064C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364329CD25EA673300D064C0 /* EmployeeDetailViewController.xib in Resources */,
+				3643295025E686D300D064C0 /* LaunchScreen.storyboard in Resources */,
+				3643294D25E686D300D064C0 /* Assets.xcassets in Resources */,
+				364329A625E9868900D064C0 /* EmployeeListViewController.xib in Resources */,
+				3643294B25E686D100D064C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3643293C25E686D100D064C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3643299125E9860400D064C0 /* UIApplication+Extensions.swift in Sources */,
+				364329C925EA673300D064C0 /* EmployeeDetailRouter.swift in Sources */,
+				3643294825E686D100D064C0 /* ViewController.swift in Sources */,
+				364329B625E9AB7E00D064C0 /* EmployeeListTableViewDataSource.swift in Sources */,
+				364329A125E9868900D064C0 /* EmployeeListPresenter.swift in Sources */,
+				364329B225E9A8AE00D064C0 /* EmployeeTableViewCell.swift in Sources */,
+				364329A525E9868900D064C0 /* EmployeeListModel.swift in Sources */,
+				3643298325E984FA00D064C0 /* Modules.swift in Sources */,
+				3643299425E9864500D064C0 /* Bundle+Extensions.swift in Sources */,
+				364329CB25EA673300D064C0 /* EmployeeDetailInteractor.swift in Sources */,
+				364329C825EA673300D064C0 /* EmployeeDetailPresenter.swift in Sources */,
+				3643297E25E9844900D064C0 /* BaseAppRouter.swift in Sources */,
+				3643296225E6896700D064C0 /* Router.swift in Sources */,
+				3643294425E686D100D064C0 /* AppDelegate.swift in Sources */,
+				3643298025E9844900D064C0 /* Module.swift in Sources */,
+				364329C725EA673300D064C0 /* EmployeeDetailModule.swift in Sources */,
+				364329A225E9868900D064C0 /* EmployeeListRouter.swift in Sources */,
+				3643296625E68B4300D064C0 /* ServiceLayer.swift in Sources */,
+				3643298725E9854100D064C0 /* GlobalAlertView.swift in Sources */,
+				364329A325E9868900D064C0 /* EmployeeListViewController.swift in Sources */,
+				364329CA25EA673300D064C0 /* EmployeeDetailViewController.swift in Sources */,
+				364329BB25E9C09A00D064C0 /* ArrayExtensions.swift in Sources */,
+				3643297F25E9844900D064C0 /* AppRoute.swift in Sources */,
+				364329A025E9868900D064C0 /* EmployeeListModule.swift in Sources */,
+				364329A425E9868900D064C0 /* EmployeeListInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3643294925E686D100D064C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3643294A25E686D100D064C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3643294E25E686D300D064C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3643294F25E686D300D064C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3643295225E686D300D064C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3643295325E686D300D064C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3643295525E686D300D064C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H424HF2296;
+				INFOPLIST_FILE = "Mooncascade-Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Com.Mooncascade-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3643295625E686D300D064C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H424HF2296;
+				INFOPLIST_FILE = "Mooncascade-Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Com.Mooncascade-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3643293B25E686D100D064C0 /* Build configuration list for PBXProject "Mooncascade-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3643295225E686D300D064C0 /* Debug */,
+				3643295325E686D300D064C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3643295425E686D300D064C0 /* Build configuration list for PBXNativeTarget "Mooncascade-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3643295525E686D300D064C0 /* Debug */,
+				3643295625E686D300D064C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3643293825E686D100D064C0 /* Project object */;
+}
